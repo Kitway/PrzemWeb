@@ -57,3 +57,4 @@ portfolioLists.forEach((list, idx) => {
 setTimeout(() => {
 	sections[4].classList.remove('active');
 }, 1500);
+

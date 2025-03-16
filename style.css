@@ -302,8 +302,9 @@ a:hover .tooltip,
 	z-index: -1;
 }
 
-.title {
-	font-size: 5.5rem;
+.title,
+.phone {
+	font-size: 4rem;
 	color: var(--main-color);
 	line-height: 2;
 }
@@ -593,6 +594,12 @@ a:hover .tooltip,
 .contact {
 	padding-top: 2rem;
 	padding-bottom: 18rem;
+}
+
+.contact-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-wrapper {
