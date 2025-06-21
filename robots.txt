@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kitway.github.io/PrzemWeb/sitemap.xml
