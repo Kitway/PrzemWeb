@@ -8,7 +8,6 @@ const resumeBoxs = document.querySelectorAll('.resume-box');
 const portfolioLists = document.querySelectorAll('.portfolio-list');
 const portfolioBoxs = document.querySelectorAll('.portfolio-box');
 
-// navbar actions and all section actions along with cube rotation when navbar is clicked
 navs.forEach((nav, idx) => {
 	nav.addEventListener('click', () => {
 		document.querySelector('.nav-list li.active').classList.remove('active');
@@ -32,7 +31,6 @@ navs.forEach((nav, idx) => {
 	});
 });
 
-// resume section when clicking tab-list
 resumeLists.forEach((list, idx) => {
 	list.addEventListener('click', () => {
 		document.querySelector('.resume-list.active').classList.remove('active');
@@ -43,7 +41,6 @@ resumeLists.forEach((list, idx) => {
 	});
 });
 
-// portfolio section when clicking tab-list
 portfolioLists.forEach((list, idx) => {
 	list.addEventListener('click', () => {
 		document.querySelector('.portfolio-list.active').classList.remove('active');
@@ -53,8 +50,7 @@ portfolioLists.forEach((list, idx) => {
 		portfolioBoxs[idx].classList.add('active');
 	});
 });
-// visibility for contact section when reloading (cube reloading animation)
+
 setTimeout(() => {
 	sections[4].classList.remove('active');
 }, 1500);
-
