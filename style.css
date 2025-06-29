@@ -92,9 +92,37 @@ p {
 	transition: 0.3s;
 }
 
-.nav-list li:hover,
-.nav-list li.active {
+.nav-list li:hover {
 	color: var(--main-color);
+}
+
+.nav-list li.active .nav-button {
+	color: var(--main-color);
+}
+
+.nav-button {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-size: 3rem;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.3s;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-button:hover,
+.nav-list li:hover .nav-button {
+	color: var(--main-color);
+}
+
+.nav-button:focus-visible {
+	outline: 2px solid var(--main-color);
+	outline-offset: 2px;
+	border-radius: 50%;
 }
 
 .tooltip {
@@ -627,9 +655,17 @@ a:hover .tooltip,
 	gap: 2rem;
 }
 
+.contact-form .field-box .field-wrapper {
+	flex: 1 1 30rem;
+}
+
+.contact-form .field-box .field-wrapper.full-width {
+	flex-basis: 100%;
+}
+
 .contact-form .field-box input,
 .contact-form .field-box textarea {
-	flex: 1 1 30rem;
+	width: 100%;
 	padding: 2rem;
 	background: var(--third-bg-color);
 	border-radius: 0.6rem;
@@ -654,6 +690,17 @@ a:hover .tooltip,
 	font-size: 5.5rem;
 	text-align: center;
 	color: var(--white-color);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }
 
 /* BREAKPOINTS */

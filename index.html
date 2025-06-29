@@ -58,26 +58,36 @@
 	</head>
 
 	<body>
-		<nav class="nav">
+		<nav class="nav" aria-label="Główna nawigacja">
 			<ul class="nav-list">
 				<li class="active">
-					<i class="bx bx-home-alt"></i>
+					<button class="nav-button" aria-label="Strona główna">
+						<i class="bx bx-home-alt" aria-hidden="true"></i>
+					</button>
 					<span class="tooltip">Strona główna</span>
 				</li>
 				<li>
-					<i class="bx bx-user"></i>
+					<button class="nav-button" aria-label="O mnie">
+						<i class="bx bx-user" aria-hidden="true"></i>
+					</button>
 					<span class="tooltip">O mnie</span>
 				</li>
 				<li>
-					<i class="bx bx-detail"></i>
+					<button class="nav-button" aria-label="Więcej">
+						<i class="bx bx-detail" aria-hidden="true"></i>
+					</button>
 					<span class="tooltip">Więcej</span>
 				</li>
 				<li>
-					<i class="bx bx-briefcase"></i>
+					<button class="nav-button" aria-label="Moje prace">
+						<i class="bx bx-briefcase" aria-hidden="true"></i>
+					</button>
 					<span class="tooltip">Moje prace</span>
 				</li>
 				<li>
-					<i class="bx bx-envelope"></i>
+					<button class="nav-button" aria-label="Kontakt">
+						<i class="bx bx-envelope" aria-hidden="true"></i>
+					</button>
 					<span class="tooltip">Kontakt</span>
 				</li>
 			</ul>
@@ -467,19 +477,65 @@
 								/>
 								<h3>Zacznijmy współpracę!</h3>
 								<div class="field-box">
-									<input type="text" placeholder="Imię i nazwisko" required />
-									<input
-										type="email"
-										placeholder="przemkoryt@gmail.com"
-										required
-									/>
-									<input type="text" placeholder="Nr telefonu" required />
-									<input type="text" placeholder="Tytuł wiadomości" required />
-									<textarea
-										name="message"
-										placeholder="Treść..."
-										required
-									></textarea>
+									<div class="field-wrapper">
+										<label for="fullName" class="visually-hidden"
+											>Imię i nazwisko</label
+										>
+										<input
+											type="text"
+											id="fullName"
+											name="name"
+											placeholder="Imię i nazwisko"
+											required
+										/>
+									</div>
+									<div class="field-wrapper">
+										<label for="email" class="visually-hidden"
+											>Adres e-mail</label
+										>
+										<input
+											type="email"
+											id="email"
+											name="email"
+											placeholder="Adres e-mail"
+											required
+										/>
+									</div>
+									<div class="field-wrapper">
+										<label for="phone" class="visually-hidden"
+											>Numer telefonu</label
+										>
+										<input
+											type="tel"
+											id="phone"
+											name="phone"
+											placeholder="Nr telefonu"
+											required
+										/>
+									</div>
+									<div class="field-wrapper">
+										<label for="subject" class="visually-hidden"
+											>Tytuł wiadomości</label
+										>
+										<input
+											type="text"
+											id="subject"
+											name="subject"
+											placeholder="Tytuł wiadomości"
+											required
+										/>
+									</div>
+									<div class="field-wrapper full-width">
+										<label for="message" class="visually-hidden"
+											>Treść wiadomości</label
+										>
+										<textarea
+											id="message"
+											name="message"
+											placeholder="Treść..."
+											required
+										></textarea>
+									</div>
 								</div>
 								<div class="contact-btn">
 									<button type="submit" class="btn">Wyślij wiadomość</button>
