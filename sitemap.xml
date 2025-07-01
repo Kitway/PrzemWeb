@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kitway.github.io/PrzemWeb/</loc>
-    <lastmod>2025-06-21</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <!-- Tutaj dodasz linki do podstron po refaktoryzacji -->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/index.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/o-mnie.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/uslugi.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/portfolio.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/cennik.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kitway.github.io/PrzemWeb/kontakt.html</loc>
+  <lastmod>2025-06-30</lastmod>
+  <priority>0.80</priority>
+</url>
+
 </urlset>
